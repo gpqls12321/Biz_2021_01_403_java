@@ -1,0 +1,12 @@
+내 프로젝트 github upload
+
+1. github repository 생성
+    https://github.com/gpqls12321 접속
+    New repository 
+2. local 폴더 repository 선언
+    local 폴더에서 git bash here 
+3. config 설정
+4. remote 설정
+5. 파일 add
+6. commit 설정
+7. push
