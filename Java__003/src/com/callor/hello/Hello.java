@@ -3,20 +3,20 @@ package com.callor.hello;
 public class Hello {
 	public static void main(String args[]) {
 		/*
-		 * main() method¶ó°í ºÎ¸¥´Ù
-		 * Run(eclipse¿¡¼­)¸¦ ÇßÀ» ¶§ ²À ÇÊ¿äÇÑ ÄÚµå
+		 * main() methodë¼ê³  ë¶€ë¥¸ë‹¤
+		 * Run(eclipseì—ì„œ)ë¥¼ í–ˆì„ ë•Œ ê¼­ í•„ìš”í•œ ì½”ë“œ
 		 * 
-		 * eclipse¿¡¼­ RunÀ» ÇßÀ» ¶§ ¹ß»ıÇÏ´Â »óÈ²
-		 * Hello.java ÆÄÀÏÀ» ÄÄÆÄÀÏ = javac Hello.java
-		 * Hello.class ÆÄÀÏÀÌ »ı¼ºµÇ¸é java Hello ¸í·ÉÀ» ½ÇÇàÇÏ¿© ÄÚµå¸¦ ÄÄÇ»ÅÍ¿¡ 
-		 * ÁÖÀÔÇÏ°í °á°ú¸¦ console¿¡ Ãâ·Â
+		 * eclipseì—ì„œ Runì„ í–ˆì„ ë•Œ ë°œìƒí•˜ëŠ” ìƒí™©
+		 * Hello.java íŒŒì¼ì„ ì»´íŒŒì¼ = javac Hello.java
+		 * Hello.class íŒŒì¼ì´ ìƒì„±ë˜ë©´ java Hello ëª…ë ¹ì„ ì‹¤í–‰í•˜ì—¬ ì½”ë“œë¥¼ ì»´í“¨í„°ì— 
+		 * ì£¼ì…í•˜ê³  ê²°ê³¼ë¥¼ consoleì— ì¶œë ¥
 		 */
 		
 		System.out.println("30 + 40 = "+ (30 + 40));
 		System.out.println("30 x 40 = "+ 30 * 40);
 		System.out.println("40 - 30 = "+ (40 - 30));
 		System.out.println("40 / 20 = "+ 40 / 20);
-		System.out.println("¿©·¯ºĞ ¹İ°©½À´Ï´Ù");
+		System.out.println("ì—¬ëŸ¬ë¶„ ë°˜ê°‘ìŠµë‹ˆë‹¤");
 	}
 
 }
