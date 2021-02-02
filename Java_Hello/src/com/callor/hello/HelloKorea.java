@@ -1,57 +1,57 @@
 package com.callor.hello;
 
-// ÇÑÁÙÂ¥¸® comment
-// µÎ¹øÂ° comment
+// í•œì¤„ì§œë¦¬ comment
+// ë‘ë²ˆì§¸ comment
 
 /*
- * ¿©±â¿¡ ÀÛ¼ºµÇ´Â ³»¿ëÀº ÁÖ¼®¹®(comment)
- * java ÄÚµå¿Í °ü°è¾øÀÌ ¼³¸íÇÏ´Â ¹®Àå
- * Âü°íÇÏ´Â ¹®Àå µîÀ» ÀÛ¼ºÇÒ ¼ö ÀÖ´Â °÷
+ * ì—¬ê¸°ì— ìž‘ì„±ë˜ëŠ” ë‚´ìš©ì€ ì£¼ì„ë¬¸(comment)
+ * java ì½”ë“œì™€ ê´€ê³„ì—†ì´ ì„¤ëª…í•˜ëŠ” ë¬¸ìž¥
+ * ì°¸ê³ í•˜ëŠ” ë¬¸ìž¥ ë“±ì„ ìž‘ì„±í•  ìˆ˜ ìžˆëŠ” ê³³
  *
- * - comment ÁÖ¼®¹®
- * 1. javaÀÇ ÄÚµå ÆÄÀÏÀ» »ý¼ºÇÏ°í (Hello.java)
- * 2. javac ¸¦ »ç¿ëÇÏ¿© ÄÄÆÄÀÏÀ» ¼öÇàÇÏ¿© Hello.class ¸¦ ¸¸µå´Â °úÁ¤¿¡¼­ 
- *    javac °¡ ¾Æ¹«·± ÀÇ¹Ì ¾ø´Â ¹®ÀåÀ¸·Î ÀÎ½ÄÇÏ°í ±×³É Áö³ªÄ¡´Â ºÎºÐ
+ * - comment ì£¼ì„ë¬¸
+ * 1. javaì˜ ì½”ë“œ íŒŒì¼ì„ ìƒì„±í•˜ê³  (Hello.java)
+ * 2. javac ë¥¼ ì‚¬ìš©í•˜ì—¬ ì»´íŒŒì¼ì„ ìˆ˜í–‰í•˜ì—¬ Hello.class ë¥¼ ë§Œë“œëŠ” ê³¼ì •ì—ì„œ 
+ *    javac ê°€ ì•„ë¬´ëŸ° ì˜ë¯¸ ì—†ëŠ” ë¬¸ìž¥ìœ¼ë¡œ ì¸ì‹í•˜ê³  ê·¸ëƒ¥ ì§€ë‚˜ì¹˜ëŠ” ë¶€ë¶„
  *    
  * Java class
- * - java ¾ð¾î ¹®¹ý¿¡ ¸Âµµ·Ï ÀÛ¼ºµÈ ¹®¼­ ÆÄÀÏ
- * - public class Å°¿öµå·Î ½ÃÀÛÀ» ÇÏ°í ÀÓÀÇ·Î ÀÌ¸§À» ÀÛ¼ºÇÏ¿© ¸¸µç´Ù.
- *     (¿©±â¿¡¼­´Â Hello)
- * - Hello.java ¶ó´Â ÆÄÀÏ¿¡ ÄÚµå°¡ ÀúÀåµÈ´Ù
- * - Å¬·¡½º ÀÌ¸§°ú ÆÄÀÏ ÀÌ¸§Àº Ç×»ó °°¾Æ¾ß ÇÑ´Ù
- * - Å¬·¡½º°¡ HelloKorea ÀÌ¸é ÆÄÀÏÀÌ¸§Àº HelloKorea.java·Î ÀÛ¼ºÀ» ÇÑ´Ù
- * - Å¬·¡½º ÀÌ¸§ Ã¹ ±ÛÀÚ´Â ¹Ýµå½Ã ¿µ¹®´ë¹®ÀÚ
- *   ±× ÀÌÈÄ¿¡´Â ¿µ¹® ´ë¼Ò¹®ÀÚ,¼ýÀÚ, _(Under Bar, Under Score) »ç¿ë °¡´É
- * - µÎ °³ ÀÌ»óÀÇ ´Ü¾î¸¦ Á¶ÇÕÇÒ ¶§´Â Camel Case·Î ÇÑ´Ù
+ * - java ì–¸ì–´ ë¬¸ë²•ì— ë§žë„ë¡ ìž‘ì„±ëœ ë¬¸ì„œ íŒŒì¼
+ * - public class í‚¤ì›Œë“œë¡œ ì‹œìž‘ì„ í•˜ê³  ìž„ì˜ë¡œ ì´ë¦„ì„ ìž‘ì„±í•˜ì—¬ ë§Œë“ ë‹¤.
+ *     (ì—¬ê¸°ì—ì„œëŠ” Hello)
+ * - Hello.java ë¼ëŠ” íŒŒì¼ì— ì½”ë“œê°€ ì €ìž¥ëœë‹¤
+ * - í´ëž˜ìŠ¤ ì´ë¦„ê³¼ íŒŒì¼ ì´ë¦„ì€ í•­ìƒ ê°™ì•„ì•¼ í•œë‹¤
+ * - í´ëž˜ìŠ¤ê°€ HelloKorea ì´ë©´ íŒŒì¼ì´ë¦„ì€ HelloKorea.javaë¡œ ìž‘ì„±ì„ í•œë‹¤
+ * - í´ëž˜ìŠ¤ ì´ë¦„ ì²« ê¸€ìžëŠ” ë°˜ë“œì‹œ ì˜ë¬¸ëŒ€ë¬¸ìž
+ *   ê·¸ ì´í›„ì—ëŠ” ì˜ë¬¸ ëŒ€ì†Œë¬¸ìž,ìˆ«ìž, _(Under Bar, Under Score) ì‚¬ìš© ê°€ëŠ¥
+ * - ë‘ ê°œ ì´ìƒì˜ ë‹¨ì–´ë¥¼ ì¡°í•©í•  ë•ŒëŠ” Camel Caseë¡œ í•œë‹¤
  */
 public class HelloKorea {
 
 	/*
-	 * main() method ¶ó°í ºÎ¸¥´Ù Å¬·¡½º¸¦ ¸¸µé°í ÄÄÆÄÀÏÀ» ¼öÇàÇÑ ÈÄ ½ÇÇàÀ» ÇßÀ» ¶§ ¹Ýµå½Ã ÀÖ¾î¾ß ÇÏ´Â ¸í·É¹®
+	 * main() method ë¼ê³  ë¶€ë¥¸ë‹¤ í´ëž˜ìŠ¤ë¥¼ ë§Œë“¤ê³  ì»´íŒŒì¼ì„ ìˆ˜í–‰í•œ í›„ ì‹¤í–‰ì„ í–ˆì„ ë•Œ ë°˜ë“œì‹œ ìžˆì–´ì•¼ í•˜ëŠ” ëª…ë ¹ë¬¸
 	 */
-	// ¸í·É¹®ÀÇ ½ÃÀÛºÎºÐ¿¡ //¸¦ ºÙÀÌ¸é ¸í·É¹®Àº ¾ø´Â °Í°ú °°´Ù
+	// ëª…ë ¹ë¬¸ì˜ ì‹œìž‘ë¶€ë¶„ì— //ë¥¼ ë¶™ì´ë©´ ëª…ë ¹ë¬¸ì€ ì—†ëŠ” ê²ƒê³¼ ê°™ë‹¤
 	public static void main(String args[]) {
         
-		// Console Ãâ·Â(¸í·É)¹®
-		System.out.println("¹Ý°©½À´Ï´Ù");
+		// Console ì¶œë ¥(ëª…ë ¹)ë¬¸
+		System.out.println("ë°˜ê°‘ìŠµë‹ˆë‹¤");
 		System.out.println("30 + 40 = " + (30 + 40));
 		System.out.println("30 x 40 = " + 30 * 40);
 		System.out.println("40 - 30 = " + (40 - 30));
 		System.out.println("40 / 20 = " + 40 / 20);
-		System.out.println("¹Ý°©½À´Ï´Ù");
+		System.out.println("ë°˜ê°‘ìŠµë‹ˆë‹¤");
 		/*
-		 * Console Ãâ·Â¹®
-		 * "" (¹®ÀÚ¿­ ÀÎ¿ë¹®, Double Qute. Mark)
-		 *    - "" Ç¥½Ã ³»ÀÇ ³»¿ëÀ» ±×´ë·Î Console Ãâ·Â
-		 *    - "" ·Î ¹­ÀÎ ³»¿ëÀ» '¹®ÀÚ¿­, String' ÀÌ¶ó°í ÇÑ´Ù.
-		 * ¼ýÀÚ (Á¤¼ö, ½Ç¼ö µîµî)´Â ¼ýÀÚ ±×´ë·Î ¼öÇÐÀûÀ¸·Î ÇØ¼®ÇÑ´Ù.
+		 * Console ì¶œë ¥ë¬¸
+		 * "" (ë¬¸ìžì—´ ì¸ìš©ë¬¸, Double Qute. Mark)
+		 *    - "" í‘œì‹œ ë‚´ì˜ ë‚´ìš©ì„ ê·¸ëŒ€ë¡œ Console ì¶œë ¥
+		 *    - "" ë¡œ ë¬¶ì¸ ë‚´ìš©ì„ 'ë¬¸ìžì—´, String' ì´ë¼ê³  í•œë‹¤.
+		 * ìˆ«ìž (ì •ìˆ˜, ì‹¤ìˆ˜ ë“±ë“±)ëŠ” ìˆ«ìž ê·¸ëŒ€ë¡œ ìˆ˜í•™ì ìœ¼ë¡œ í•´ì„í•œë‹¤.
 		 * 
-		 * »ê¼ú(¿¬»ê)½Ä 
-		 * 1. ¼ýÀÚ »ê¼ú½Ä : ¼öÇÐÀÇ »çÄ¢¿¬»êÀ» ¼öÇàÇÏ°í °á°ú¸¦ Ãâ·ÂÇÑ´Ù.
-		 * 2. ¹®ÀÚ¿­ »ê¼ú½Ä : ""·Î ¹­ÀÎ ¹®ÀÚ¿­À» + ¿¬»êÇÏ¸é ¹®ÀÚ¿­À» ¿¬°áÇÏ¿© Ãâ·Â
-		 *                  : + ¿¬»ê¸¸ °¡´É
-		 * 3. ¹®ÀÚ¿­ + ¼ýÀÚ »ê¼ú½Ä : ¸ðµç ¼ýÀÚ¸¦ ÀÚµ¿À¸·Î ¹®ÀÚ¿­È­ÇÏ¿© ¹®ÀÚ¿­ »ê¼ú½ÄÀ¸·Î ¹Ù²Ù¾î ¿¬»êÇÏ°í
-		 *                           °á°ú¸¦ Ãâ·ÂÇÑ´Ù
+		 * ì‚°ìˆ (ì—°ì‚°)ì‹ 
+		 * 1. ìˆ«ìž ì‚°ìˆ ì‹ : ìˆ˜í•™ì˜ ì‚¬ì¹™ì—°ì‚°ì„ ìˆ˜í–‰í•˜ê³  ê²°ê³¼ë¥¼ ì¶œë ¥í•œë‹¤.
+		 * 2. ë¬¸ìžì—´ ì‚°ìˆ ì‹ : ""ë¡œ ë¬¶ì¸ ë¬¸ìžì—´ì„ + ì—°ì‚°í•˜ë©´ ë¬¸ìžì—´ì„ ì—°ê²°í•˜ì—¬ ì¶œë ¥
+		 *                  : + ì—°ì‚°ë§Œ ê°€ëŠ¥
+		 * 3. ë¬¸ìžì—´ + ìˆ«ìž ì‚°ìˆ ì‹ : ëª¨ë“  ìˆ«ìžë¥¼ ìžë™ìœ¼ë¡œ ë¬¸ìžì—´í™”í•˜ì—¬ ë¬¸ìžì—´ ì‚°ìˆ ì‹ìœ¼ë¡œ ë°”ê¾¸ì–´ ì—°ì‚°í•˜ê³ 
+		 *                           ê²°ê³¼ë¥¼ ì¶œë ¥í•œë‹¤
 		 * 
 		 */
 		
