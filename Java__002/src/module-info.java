@@ -1,0 +1,2 @@
+module Java__002 {
+}
