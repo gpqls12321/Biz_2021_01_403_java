@@ -27,6 +27,7 @@ public class Varriable {
 		System.out.println(40.0 / 30.0);
 		System.out.println(40.0 / 30);
 		System.out.println(40 / 30.0);
+		System.out.println(50.0 / 30.0);
 	}
 
 }
