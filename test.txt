@@ -1,0 +1,17 @@
+Republic of Korea
+대한민국 만세
+우리나라만세
+viva Korea
+Welcome to Korea
+아무거나
+아무거나2
+아무거나 3＃★
+
+// 여기는 main() method
+public static void main(String args[]) {
+       System.out.println("대한민국");
+}
+
+// vi editor 이용하여 Text 문자를 작성하자
+
+어쩌구
