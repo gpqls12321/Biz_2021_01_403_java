@@ -30,5 +30,6 @@ public class While_02 {
 		//풀어쓰면
 		count++;
 		System.out.println(count);
+		
 	}
 }
