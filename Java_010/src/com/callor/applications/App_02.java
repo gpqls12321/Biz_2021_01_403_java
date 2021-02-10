@@ -10,20 +10,25 @@ public class App_02 {
 
 		System.out.print("숫자입력(2~9) >> ");
 		int dan = scan.nextInt();
-		System.out.println("=======================");
-		System.out.println("구구단 " + dan + "단");
-		System.out.println("-----------------------");
 
-		
-		if (dan < 2 | dan > 9) {
-			System.out.println("error");
+		boolean bYes2 = dan >= 2;
+		boolean bYes9 = dan <= 9;
+		if (bYes2 && bYes9) {
+
+			System.out.println("=======================");
+			System.out.println("구구단 " + dan + "단");
+			System.out.println("-----------------------");
+
+			for (int i = 0; i < 8; i++) {
+				int num1 = i + 2;
+				System.out.println(dan + "x" + num1 + "=" + dan * num1);
+			}
+			System.out.println("=======================");
+		} else {
+			System.out.println("입력한 숫자 : " + dan);
+			System.out.println("값은 2~9까지만 입력하세요");
 		}
-		
-		for (int i = 0; i < 8; i++) {
-			int num1 = i + 2;
-			System.out.println(dan + "x" + num1 + "=" + dan * num1);
-		}
-		System.out.println("=======================");
+
 	}
 
 }
