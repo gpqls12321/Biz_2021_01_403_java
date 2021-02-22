@@ -1,5 +1,7 @@
 package com.callor.applications;
 
+// 내가 한 것 
+
 import java.util.Random;
 
 public class Score_05 {
@@ -26,7 +28,7 @@ public class Score_05 {
 
 			intSum[index] = intKor[index] + intEng[index] + intMath[index];
 
-			floatAvg[index] = intSum[index] / (float) 3.0;
+			floatAvg[index] = (float) intSum[index] / 3;
 		}
 
 		System.out.println("===================================================");
