@@ -52,6 +52,7 @@ public class Score_02 {
 		for(int i = 0; i < strName.length; i++) {
 			ssV1.scorePrint(strName[i], intKor[i], intEng[i], intMath[i], intSum[i], floatAvg[i]);
 		}
+		
 		// 이름,국어,영어,수학,총점,평균 배열을 통째로 매개변수로 전달하고 
 		// ssV1.print() method 에서 리스트를 출력하도록
 		ssV1.print(strName, intKor, intEng, intMath, intSum, floatAvg);
