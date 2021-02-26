@@ -31,7 +31,7 @@ public class Score_01 {
 		try {
 			// sVO.intKor = Integer.valueOf(strKor);
 			// scoreVO.setIntKor(strKor);
-			sVO.intEng = Integer.valueOf(strEng);
+		//	sVO.intEng = Integer.valueOf(strEng);
 			sVO.intMath = Integer.valueOf(strMath);
 		} catch (Exception e) {
 			System.out.println("숫자로만 입력");
