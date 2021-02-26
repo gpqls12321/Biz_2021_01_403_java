@@ -60,7 +60,7 @@ public class Product_03_1 {
 				if (pVOs[i].oPrice == 0 || pVOs[i].oPrice < 0) {
 					System.out.print("1 이상 입력하세요");
 				} else {
-					pVOs[i].oPrice = Integer.valueOf(intOPrice);
+					pVOs[i].oPrice = intOPrice;
 					break;
 				}
 			}
