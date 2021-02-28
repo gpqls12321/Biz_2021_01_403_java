@@ -83,10 +83,14 @@ public class CartServiceV1 {
 		System.out.println("====================================");
 		System.out.println("구매자\t상품명\t단가\t수량");
 		System.out.println("------------------------------------");
-		System.out.printf("%s\t%s\t%d\t%d\n",((CartVO) cartList).getCartUserName(),
-				((CartVO) cartList).getCartPName(),
-				((CartVO) cartList).getCartQty(),
-				((CartVO) cartList).getCartPrice());
+		
+		int nSize = cartList.size();
+		for (int i = 0; i < nSize; i++) {
+		System.out.printf("%s\t%s\t%d\t%d\n",cartList.get(i).getCartUserName(),
+				cartList.get(i).getCartPName(),
+				cartList.get(i).getCartQty(),
+				cartList.get(i).getCartPrice());
+		}
 		
 		
 		
