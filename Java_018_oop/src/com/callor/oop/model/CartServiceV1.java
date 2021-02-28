@@ -20,15 +20,6 @@ import java.util.Scanner;
 
 public class CartServiceV1 {
 
-	private String cartUserName;
-	private String cartPName;
-	private String cartStd;
-	private String cartDate;
-	private String cartTime;
-	private int cartQty;
-	private int cartPrice;
-	private int cartTotal;
-	
 	private List<CartVO> cartList = new ArrayList<CartVO>();
 	
 	private Scanner scan = new Scanner(System.in);
@@ -38,10 +29,66 @@ public class CartServiceV1 {
 	public void inputCart() {
 		
 		System.out.print("구매자 이름 >> ");
+		String strUserName = scan.nextLine();
+		
+		System.out.print("상품명 >> ");
+		String strPName = scan.nextLine();
+		
+		int intQty = 0;
+		while (true) {
+			System.out.print("수량 >> ");
+			String strQty = scan.nextLine();
+			try {
+				intQty = Integer.valueOf(strQty);
+				if (intQty < 2) {
+					System.out.print("수량은 2개 이상 입력하세요");
+					continue;
+				}
+			} catch (Exception e) {
+				System.out.println("수량은 숫자로 입력하세요");
+				continue;
+			}
+			break;
+		}
+		
+		int intPrice = 0;
+		while (true) {
+			System.out.print("단가 >> ");
+			String strPrice = scan.nextLine();
+			try {
+				intPrice = Integer.valueOf(strPrice);
+				if (intPrice < 1000) {
+					System.out.println("가격은 1000원 이상 입력하세요");
+					continue;
+				}
+			} catch (Exception e) {
+				System.out.println("가격은 숫자로 입력하세요");
+				continue;
+			}
+			break;
+		}
+		
+		CartVO cartVO = new CartVO();
+		cartVO.setCartUserName(strUserName);
+		cartVO.setCartPName(strPName);
+		cartVO.setCartQty(intQty);
+		cartVO.setCartPrice(intPrice);
+		
+		cartList.add(cartVO);
 		
 	}
 	
 	public void printCartList() {
+		
+		System.out.println("====================================");
+		System.out.println("구매자\t상품명\t단가\t수량");
+		System.out.println("------------------------------------");
+		System.out.printf("%s\t%s\t%d\t%d\n",((CartVO) cartList).getCartUserName(),
+				((CartVO) cartList).getCartPName(),
+				((CartVO) cartList).getCartQty(),
+				((CartVO) cartList).getCartPrice());
+		
+		
 		
 	}
 	
