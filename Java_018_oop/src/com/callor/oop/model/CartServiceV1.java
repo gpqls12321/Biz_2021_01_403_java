@@ -92,6 +92,7 @@ public class CartServiceV1 {
 				cartList.get(i).getCartPrice());
 		}
 		
+		System.out.println("====================================");
 		
 		
 	}
