@@ -24,7 +24,7 @@ public class CartServiceV1 implements CartService {
 		System.out.print("구매자 이름 >> ");
 		String strUserName = scan.nextLine();
 
-		System.out.print("품목명 >> ");
+		System.out.print("상품명 >> ");
 		String strPName = scan.nextLine();
 
 		int intQty = 0;
@@ -73,7 +73,7 @@ public class CartServiceV1 implements CartService {
 	public void printAll() {
 
 		System.out.println("===========================================");
-		System.out.println("구매자\t품목명\t수량\t단가\t합계");
+		System.out.println("구매자\t상품명\t수량\t단가\t합계");
 		System.out.println("-------------------------------------------");
 		int nSize = cartList.size();
 		int intTotal = 0;
@@ -96,7 +96,7 @@ public class CartServiceV1 implements CartService {
 		String strName = scan.nextLine();
 		
 		System.out.println("===========================================");
-		System.out.println("구매자\t품목명\t수량\t단가\t합계");
+		System.out.println("구매자\t상품명\t수량\t단가\t합계");
 		System.out.println("-------------------------------------------");
 		
 		int nSize = cartList.size();
