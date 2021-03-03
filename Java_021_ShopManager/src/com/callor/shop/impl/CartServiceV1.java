@@ -59,7 +59,6 @@ public class CartServiceV1 implements CartService {
 			}
 		} // while() end
 
-		// cart 1개를 생성하고 데이터 저장
 		CartVO cartVO = new CartVO();
 		cartVO.setUserName(strUserName);
 		cartVO.setProductName(strPName);
