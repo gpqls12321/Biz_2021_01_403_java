@@ -35,6 +35,7 @@ public class CartServiceV1 implements CartService {
 				intQty = Integer.valueOf(strQty);
 				if (intQty < 1) {
 					System.out.println("수량은 1개 이상 입력하세요");
+					continue;
 				}
 				break;
 			} catch (Exception e) {
@@ -50,6 +51,7 @@ public class CartServiceV1 implements CartService {
 				intPrice = Integer.valueOf(strPrice);
 				if (intPrice < 1) {
 					System.out.println("단가는 1 이상 입력하세요");
+					continue;
 				}
 				break;
 			} catch (Exception e) {
