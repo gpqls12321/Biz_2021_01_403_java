@@ -23,6 +23,7 @@ public class MenuServiceV1 implements MenuService{
 			System.out.println("3. 카트 리스트");
 			System.out.println("Q. 종료");
 			System.out.println("---------------------------------------");
+			System.out.print("선택 >> ");
 			String strMenu = scan.nextLine();
 			if(strMenu.equals("Q")) {
 				break;

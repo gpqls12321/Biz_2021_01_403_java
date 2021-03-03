@@ -11,11 +11,13 @@ public class CartServiceV1 implements CartService {
 
 	private List<CartVO> cartList;
 	private Scanner scan;
-
-	public void inputCart() {
-		
+	
+	public CartServiceV1() {
 		cartList = new ArrayList<CartVO>();
 		scan = new Scanner(System.in);
+	}
+
+	public void inputCart() {
 		
 		System.out.println("==================================");
 		System.out.println("장바구니에 넣기");
