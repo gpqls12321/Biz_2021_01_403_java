@@ -35,7 +35,6 @@ public class CartServiceV1 implements CartService {
 				intQty = Integer.valueOf(strQty);
 				if (intQty < 1) {
 					System.out.println("수량은 1개 이상 입력하세요");
-					continue;
 				}
 				break;
 			} catch (Exception e) {
@@ -51,7 +50,6 @@ public class CartServiceV1 implements CartService {
 				intPrice = Integer.valueOf(strPrice);
 				if (intPrice < 1) {
 					System.out.println("단가는 1 이상 입력하세요");
-					continue;
 				}
 				break;
 			} catch (Exception e) {
@@ -76,6 +74,7 @@ public class CartServiceV1 implements CartService {
 		System.out.println("===========================================");
 		System.out.println("구매자\t상품명\t수량\t단가\t합계");
 		System.out.println("-------------------------------------------");
+		
 		int nSize = cartList.size();
 		int intTotal = 0;
 		int count = 0;
