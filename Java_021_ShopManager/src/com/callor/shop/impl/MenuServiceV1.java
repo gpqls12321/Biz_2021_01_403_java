@@ -6,11 +6,11 @@ import com.callor.shop.service.MenuService;
 
 public class MenuServiceV1 implements MenuService {
 
-	private Scanner scan;
+	private Scanner scan; // Scanner 클래스를 사용하여 scan 객체 선언
 
 	public MenuServiceV1() {
 		// TODO Auto-generated constructor stub
-		scan = new Scanner(System.in);
+		scan = new Scanner(System.in); // 스캔 객체 사용하기 위한 준비. 스캔 객체 초기화(생성) 
 	}
 
 	public Integer selectMenu() {
@@ -25,7 +25,7 @@ public class MenuServiceV1 implements MenuService {
 			System.out.println("QUIT. 끝내기");
 			System.out.println("===========================================");
 			System.out.print("선택 >> ");
-			String strMenu = scan.nextLine();
+			String strMenu = scan.nextLine(); 
 
 			if (strMenu.equals("QUIT")) {
 				break;
