@@ -16,4 +16,13 @@ package com.callor.student;
  */
 public class Ex_10 {
  // 구구단 7단 코드
+	public static void main(String[] args) {
+		int dan = 0;
+		dan = 7;
+		
+		for(int i = 0; i < 9; i++) {
+			int num = i + 1;
+			System.out.println(dan + "x" + num + "=" + dan * num);
+		}
+	}
 }
