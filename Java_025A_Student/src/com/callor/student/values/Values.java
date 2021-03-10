@@ -6,7 +6,7 @@ public class Values {
 		return String.format("%0" + nCount + "d", 0).replace("0", "=");
 	}
 	public static String sLine(int nCount) {
-		return String.format("%0" + nCount + "d", 0).replace("0", "=");
+		return String.format("%0" + nCount + "d", 0).replace("0", "-");
 	}
 
 }

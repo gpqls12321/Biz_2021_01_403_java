@@ -17,6 +17,16 @@ public class Ex_08 {
 		int[] num = new int[100];
 		for(int i = 0; i < num.length; i++) {
 			num[i] = rnd.nextInt(90) + 11;
+			
+			int index = 0;
+			for(index = 10; index < num.length; index++) {
+				if (num[i] % index == 0) {
+					break;
+				}
+			}
+			if (index >= num[i]) {
+				System.out.println(num[i] + " : 소수");
+			} 
 		}
 	}
 	
